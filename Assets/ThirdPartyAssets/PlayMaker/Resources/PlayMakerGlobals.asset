@@ -1,0 +1,191 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 42938266, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: PlayMakerGlobals
+  m_EditorClassIdentifier: 
+  variables:
+    floatVariables: []
+    intVariables:
+    - useVariable: 1
+      name: PlayersInRoom
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    boolVariables:
+    - useVariable: 1
+      name: ConnectStatus
+      tooltip: "\u0421\u0442\u0430\u0442\u0443\u0441 \u043F\u043E\u0434\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u044F"
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: OfflineStatus
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    stringVariables:
+    - useVariable: 1
+      name: LobbyName
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: TankLobby
+    - useVariable: 1
+      name: RoomName
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: TankRoom
+    vector2Variables: []
+    vector3Variables: []
+    colorVariables: []
+    rectVariables: []
+    quaternionVariables: []
+    gameObjectVariables:
+    - useVariable: 1
+      name: Player1
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: Player2
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    objectVariables: []
+    materialVariables: []
+    textureVariables: []
+    arrayVariables: []
+    enumVariables:
+    - useVariable: 1
+      name: InputUp
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      enumName: UnityEngine.KeyCode
+      intValue: 119
+    - useVariable: 1
+      name: InputDown
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      enumName: UnityEngine.KeyCode
+      intValue: 115
+    - useVariable: 1
+      name: InputLeft
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      enumName: UnityEngine.KeyCode
+      intValue: 97
+    - useVariable: 1
+      name: InputRight
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      enumName: UnityEngine.KeyCode
+      intValue: 100
+    - useVariable: 1
+      name: InputShoot
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      enumName: UnityEngine.KeyCode
+      intValue: 32
+    - useVariable: 1
+      name: LobbyType
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      enumName: Photon.Realtime.LobbyType
+      intValue: 0
+    categories:
+    - 
+    - Input
+    - NET
+    - PlayerConfiguration
+    variableCategoryIDs: 02000000020000000200000002000000020000000300000003000000010000000100000001000000010000000100000002000000
+  events:
+  - PHOTON / CLIENT STATE / AUTHENTICATED
+  - PHOTON / CLIENT STATE / AUTHENTICATING
+  - PHOTON / CLIENT STATE / CONNECTED TO GAMESERVER
+  - PHOTON / CLIENT STATE / CONNECTED TO MASTERSERVER
+  - PHOTON / CLIENT STATE / CONNECTED TO NAMESERVER
+  - PHOTON / CLIENT STATE / CONNECTING TO GAMESERVER
+  - PHOTON / CLIENT STATE / CONNECTING TO NAMESERVER
+  - PHOTON / CLIENT STATE / CONNECTING TO MASTERSERVER
+  - PHOTON / CLIENT STATE / DISCONNECTED
+  - PHOTON / CLIENT STATE / DISCONNECTING
+  - PHOTON / CLIENT STATE / DISCONNECTING FROM GAMESERVER
+  - PHOTON / CLIENT STATE / DISCONNECTING FROM MASTERSERVER
+  - PHOTON / CLIENT STATE / DISCONNECTING FROM NAMESERVER
+  - PHOTON / CLIENT STATE / JOINED
+  - PHOTON / CLIENT STATE / JOINED LOBBY
+  - PHOTON / CLIENT STATE / JOINING
+  - PHOTON / CLIENT STATE / JOINING LOBBY
+  - PHOTON / CLIENT STATE / LEAVING
+  - PHOTON / CLIENT STATE / PEER CREATED
+  - PHOTON / ON CONNECTED
+  - PHOTON / ON CONNECTED TO MASTER
+  - PHOTON / ON DISCONNECTED
+  - PHOTON / ON CUSTOM AUTHENTICATION RESPONSE
+  - PHOTON / ON CUSTOM AUTHENTICATION FAILED
+  - PHOTON / ON JOINED LOBBY
+  - PHOTON / ON LEFT LOBBY
+  - PHOTON / ON CREATED ROOM
+  - 'PHOTON / ON CREATE ROOM FAILED '
+  - PHOTON / ON JOINED ROOM
+  - PHOTON / ON JOINED ROOM FAILED
+  - PHOTON / ON JOIN RANDOM ROOM FAILED
+  - PHOTON / ON LEFT ROOM
+  - PHOTON / ON PLAYER ENTERED ROOM
+  - PHOTON / ON PLAYER LEFT ROOM
+  - PHOTON / ON FRIEND LIST UPDATE
+  - PHOTON / ON ROOM LIST UPDATE
+  - PHOTON / ON ROOM PROPERTIES UPDATE
+  - PHOTON / ON PLAYER PROPERTIES UPDATE
+  - PHOTON / ON LOBBY STATISTICS UPDATE
+  - PHOTON / ON MASTERCLIENT SWITCHED
+  - PHOTON / ON REGION LIST RECEIVED
+  - PHOTON / ON WEBRPC RESPONSE
+  - PHOTON / ON PHOTON INSTANTIATE
+  - DEMO / RPC /FOR ALL TARGETS
+  - DEMO / RPC / TO NEXT
+  - DEMO / UI / ON VALUE CHANGED
+  - DEMO / CONNECT
+  - DEMO / CONNECT TO BEST SERVER
+  - DEMO / CREATE ROOM
+  - DEMO / DISCONNECT
+  - DEMO / JOIN LOBBY
+  - DEMO / LEAVE LOBBY
+  - DEMO / LEAVE ROOM
+  - DEMO / JOIN RANDOM ROOM
+  - DEMO / SHOW ERROR
+  - NO
+  - DAMAGERPC
+  - YES
+  - InstanceBullet
+  - DamageOffline
+  - DamageOnline
+  - INSTANCERPC
+  - SETNAMEPLAYERRPC
+  - SET_NAME_PLAYER_RPC
+  - START_GAME
+  - STARTGAME_RPC
+  - GAMEOVER_RPC
+  - Player1Fail
+  - Player2Fail
+  - DESTROY_RPC
